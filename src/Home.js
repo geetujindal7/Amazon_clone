@@ -1,0 +1,47 @@
+import React from 'react';
+import './Home.css'
+import Product from './Product';
+
+
+function Home(){
+
+        return(
+            <div className="home">
+            <div className="home__container">
+            <img className="home_img" src="https://media.istockphoto.com/photos/panoramic-view-of-colorful-sunrise-in-mountains-picture-id620951116?b=1&k=20&m=620951116&s=170667a&w=0&h=_r0wleHGhnEVHMkRxDfAM0eYTfDCApJ89oW-gQURzHM="
+            alt="" 
+></img>
+            </div>
+           <div className="home__row">
+           <Product title="Pen drive" image="data:image/jpeg;base64,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" price="600" />
+           <Product title="Mobile" image= "https://m.media-amazon.com/images/I/71geVdy6-OS._SX569_.jpg" price="23000"/>
+           <Product title="Laptop" image= "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg" price="60000"/>
+           
+
+          
+           </div>
+
+           <div className="home__row">
+           <Product 
+               title=" Sony Headphones"
+               image="https://m.media-amazon.com/images/I/71o8Q5XJS5L._SY450_.jpg"
+               price="20000"
+           />
+           <Product 
+               title="Boat Earphones"
+               price="1200"
+               image="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/756866f0-25e4-4b5d-8b7c-546c2111da69.png?v=1625045615"
+           /></div>
+
+<div className="home__row">
+           <Product 
+               title=" LED"
+               image="https://static.toiimg.com/photo/74478642.cms"
+               price="30000"
+           /></div>
+           </div>
+            
+        )
+
+}
+export default Home;
